@@ -1,0 +1,4 @@
+.terraform/plugins/**
+dev/.terraform/plugins/**
+workspaces/dev/.terraform/plugins/**
+
