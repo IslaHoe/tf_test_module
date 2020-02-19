@@ -1,2 +1,12 @@
-version: 3
-automerge: true
+version: 2
+projects:
+  - name: module-test-dev
+    dir: workspaces/dev
+    terraform_version: v0.12.20
+    workflow: dev-mod-test
+    autoplan: 
+      when_modified: ["./*.tf"]
+dev-mod-test:
+  plan:
+    steps:
+    - run: echo hi
