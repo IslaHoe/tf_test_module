@@ -9,3 +9,4 @@ workflows:
     plan:
       steps:
       - run: mkdir helloworld.txt
+      - run: rm -rf helloworld.txt
