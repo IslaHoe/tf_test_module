@@ -9,9 +9,3 @@ projects:
     when_modified: ["*.tf", "../modules/**.tf"]
     enabled: true
   workflow: myworkflow
-workflows:
-  myworkflow:
-    plan:
-      steps:
-      - init:
-      - plan:
