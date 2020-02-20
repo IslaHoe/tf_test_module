@@ -8,5 +8,10 @@ projects:
   autoplan:
     when_modified: ["*.tf", "../modules/**.tf"]
     enabled: true
-    allowed_overrides: [workflow]
   workflow: myworkflow
+workflows:
+  myworkflow:
+    plan:
+    steps:
+      - init:
+      - plan:
