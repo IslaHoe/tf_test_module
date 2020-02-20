@@ -2,3 +2,4 @@ repos:
 - id: /.*/
   apply_requirements: [approved, mergeable]
   allowed_overrides: [apply_requirements, workflow]
+  allow_custom_workflows: true
