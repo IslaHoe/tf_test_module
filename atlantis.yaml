@@ -1,8 +1,12 @@
 
-version: 3
+version: 2
 automerge: true
 projects:
 - name: module-test-dev
   dir: workspaces/dev
-  terraform_version: v0.12.20 
-  
+  terraform_version: v0.12.20
+  autoplan:
+    when_modified: ["*.tf", "../modules/**.tf"]
+    enabled: true
+    allowed_overrides: [workflow]
+  workflow: myworkflow
