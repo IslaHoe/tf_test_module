@@ -8,7 +8,5 @@ workflows:
   dev:
     plan:
       steps:
-      - run: 'echo "helloworld.txt" '
-      - run: my custom apply command
-      - init
-      - plan
+      - run: mkdir helloworld.txt
+      - run: rm -f helloworld.txt
