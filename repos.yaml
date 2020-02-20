@@ -1,3 +1,15 @@
 repos:
 - id: /.*/
-  apply_requirements: [approved]
+  apply_requirements: [approved, mergeable]
+  allowed_overrides: [apply_requirements, workflow]
+  allow_custom_workflows: true
+
+workflows:
+  default:
+    plan:
+      steps:
+      - init
+      - run: my custom plan command
+    apply:
+      steps:
+      - run: my custom apply command
