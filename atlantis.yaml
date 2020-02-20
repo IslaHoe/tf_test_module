@@ -12,6 +12,6 @@ projects:
 workflows:
   myworkflow:
     plan:
-    steps:
-      - init:
-      - plan:
+      steps:
+        - init:
+        - plan:
