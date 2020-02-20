@@ -1,0 +1,8 @@
+
+version: 2
+automerge: true
+projects:
+- name: module-test-dev
+  dir: workspaces/dev
+  terraform_version: v0.12.20 
+  workflow: myworkflow
