@@ -1,6 +1,6 @@
 
 version: 2
-automerge: false
+automerge: true
 projects:
 - name: module-test-dev
   dir: workspaces/dev
