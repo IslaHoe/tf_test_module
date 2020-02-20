@@ -13,7 +13,5 @@ workflows:
   myworkflow:
     plan:
       steps:
-      - env:
-        command: 'echo "Hello World"'
       - init:
       - plan:
