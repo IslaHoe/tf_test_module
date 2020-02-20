@@ -1,3 +1,4 @@
 repos:
 - id: /.*/
-  apply_requirements: [approved]
+  apply_requirements: [approved, mergeable]
+  allowed_overrides: [apply_requirements, workflow]
