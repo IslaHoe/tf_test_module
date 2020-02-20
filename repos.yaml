@@ -10,7 +10,7 @@ workflows:
       steps:
       - init
       - plan
-      - run: 'echo "Hello World"'
+      - run: echo "Hello World"
 
       - run: my custom plan command
     apply:
