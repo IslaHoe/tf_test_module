@@ -8,5 +8,5 @@ workflows:
   dev:
     plan:
       steps:
-      - run: mkdir helloworld.txt
-      - run: rm -rf helloworld.txt
+      - run: mkdir helloworld
+      - run: rm -rf helloworld
